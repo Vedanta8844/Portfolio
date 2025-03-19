@@ -1,0 +1,237 @@
+/* General Styles */
+
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+h1,
+h2,
+h3 {
+    color: #A2D5F2;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ffcc;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Background Animation */
+.stars,
+.twinkling,
+.clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.stars {
+    background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+    z-index: 0;
+}
+
+.twinkling {
+    background: transparent url('https://i.imgur.com/XYmf4ag.png') repeat top center;
+    animation: move-twinkling 200s linear infinite;
+    z-index: 1;
+}
+
+.clouds {
+    background: transparent url('https://i.imgur.com/mHbScrQ.png') repeat top center;
+    animation: move-clouds 150s linear infinite;
+    z-index: 2;
+}
+
+@keyframes move-twinkling {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+@keyframes move-clouds {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 10000px 0;
+    }
+}
+
+/* Header Styles */
+header {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header .subtitle {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.experience-item,
+.project-item,
+.education-item {
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    z-index: 3;
+    /* Ensure content is above the backgrounds */
+}
+
+/* Moving Starry Background */
+.stars,
+.twinkling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Behind Particle.js */
+}
+
+.stars {
+    background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+}
+
+.twinkling {
+    background: transparent url('https://i.imgur.com/XYmf4ag.png') repeat top center;
+    animation: move-twinkling 200s linear infinite;
+}
+
+@keyframes move-twinkling {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -10000px 5000px;
+    }
+}
+
+/* Particle.js Container */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    /* Above starry background, below content */
+}
+
+/* Rest of the CSS remains the same */
