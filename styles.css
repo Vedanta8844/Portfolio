@@ -206,11 +206,11 @@ body {
 }
 
 .stars {
-    background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+    background: #000  repeat top center;
 }
 
 .twinkling {
-    background: transparent url('https://i.imgur.com/XYmf4ag.png') repeat top center;
+    background: transparent  repeat top center;
     animation: move-twinkling 200s linear infinite;
 }
 
