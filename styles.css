@@ -78,18 +78,18 @@ a:hover {
 }
 
 .stars {
-    background: #000 url('https://i.imgur.com/YKY28eT.png') repeat top center;
+    background: #000  repeat top center;
     z-index: 0;
 }
 
 .twinkling {
-    background: transparent url('https://i.imgur.com/XYmf4ag.png') repeat top center;
+    background: transparent  repeat top center;
     animation: move-twinkling 200s linear infinite;
     z-index: 1;
 }
 
 .clouds {
-    background: transparent url('https://i.imgur.com/mHbScrQ.png') repeat top center;
+    background: transparent  repeat top center;
     animation: move-clouds 150s linear infinite;
     z-index: 2;
 }
